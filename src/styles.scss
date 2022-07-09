@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./dist/scss/variables.scss');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background:#E3E9FF;
+}
+
+.container{
+    width: 350px;
+    margin: 50px auto;
+}
