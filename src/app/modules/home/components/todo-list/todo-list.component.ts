@@ -9,11 +9,20 @@ import { TaskList } from '../../model/task-list';
 export class TodoListComponent implements OnInit {
 
   public takslist: Array<TaskList> = [
+    { task: 'morango', checked: true },
+    { task: 'morango', checked: false },
+    { task: 'morango', checked: false },
+    { task: 'morango', checked: false },
+
   ]
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public deleteItemTaskList(event: number) {
+    this.takslist.splice(event, 1)
   }
 
 }
