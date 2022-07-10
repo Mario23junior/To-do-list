@@ -13,7 +13,11 @@ body {
     background: $primary-background-color
 }
 
-.container{
+ul {
+    list-style: none;
+}
+
+.container {
     width: 350px;
     margin: 50px auto;
 }
