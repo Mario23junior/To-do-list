@@ -1,6 +1,6 @@
 @import '../../../../../dist/scss/variables.scss';
 
-section{
+section {
   width: 100%;
   min-height: 250px;
 
@@ -9,40 +9,42 @@ section{
 
   margin-top: 20px;
 
-  &.loading{
-    background-image: url("/assets/img/bg-task.png");
+  &.loading {
+    background-image: url("../../../../../assets/taskro-lead.gif");
     background-repeat: no-repeat;
-    background-position: center 30px;
+    background-position: -228px;
   }
 
-  ul{
+  ul {
     padding: 20px;
 
-    li{
+    li {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       margin-bottom: 10px;
 
-      input{
-        &[type="checkbox"]{
+      input {
+        &[type="checkbox"] {
           width: 5%;
         }
-        &[type="text"]{
+
+        &[type="text"] {
           width: 80%;
           padding: 5px 10px;
           border: none;
 
           font-size: 16px;
           color: $primary-text-color;
-          &.checked{
+
+          &.checked {
             text-decoration: line-through;
           }
         }
       }
 
-      button{
+      button {
         width: 5%;
         background: none;
         border: none;
