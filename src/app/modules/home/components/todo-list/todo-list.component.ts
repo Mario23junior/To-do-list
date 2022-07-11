@@ -8,13 +8,7 @@ import { TaskList } from '../../model/task-list';
 })
 export class TodoListComponent implements OnInit {
 
-  public takslist: Array<TaskList> = [
-    { task: 'morango', checked: true },
-    { task: 'morango', checked: false },
-    { task: 'morango', checked: false },
-    { task: 'morango', checked: false },
-
-  ]
+  public takslist: Array<TaskList> = []
 
   constructor() { }
 
@@ -25,9 +19,13 @@ export class TodoListComponent implements OnInit {
     this.takslist.splice(event, 1)
   }
 
+  public setEmitTaskList(event: string) {
+    console.log(event)
+  }
+
   public deleteAllTaskList() {
     const confirm = window.confirm("Voĉ deseja realmente deletar todos os item ?")
-    if (confirm === true) {
+    if (confirm) {
       this.takslist = []
     }
   }
